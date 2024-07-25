@@ -1,0 +1,126 @@
+/* Reset de estilos e definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.fundo-azul-escuro {
+    background-color: #1a237e; /* Cor de fundo azul escuro */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0d47a1; /* Cor de fundo azul mais escuro para o cabeçalho */
+}
+
+header img {
+    max-width: 150px;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.produtos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.linha-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    width: 250px;
+    background-color: #1565c0; /* Cor de fundo azul */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.produto .preco {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    display: block;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 200px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Verde escuro do WhatsApp */
+}
+
+.planos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.plano {
+    background-color: #0d47a1; /* Cor de fundo azul mais escuro para os planos */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.plano h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}

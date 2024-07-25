@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6; /* Melhorar a legibilidade do texto */
 }
 
 .fundo-azul-escuro {
@@ -15,37 +16,45 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Aumentar a largura para melhor aproveitamento do espaço */
+    max-width: 1200px; /* Limitar a largura máxima */
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0; /* Aumentar o padding para maior espaço no cabeçalho */
     background-color: #0d47a1; /* Cor de fundo azul mais escuro para o cabeçalho */
 }
 
 header img {
-    max-width: 150px;
+    max-width: 300px; /* Aumentar a largura máxima do logo */
+    height: auto; /* Manter a proporção da altura */
+}
+
+header .outras-imagens img {
+    width: 40px; /* Ajuste para o tamanho desejado */
+    height: 40px; /* Ajuste para o tamanho desejado */
+    margin: 0 10px; /* Ajuste a margem para espaçar os ícones */
 }
 
 .banner {
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 20px; /* Aumentar o padding para um banner mais destacado */
 }
 
 .banner h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem; /* Aumentar o tamanho da fonte do título */
     margin-bottom: 20px;
 }
 
 .banner p {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumentar o tamanho da fonte do parágrafo */
 }
 
 .produtos {
-    padding: 50px 0;
+    padding: 60px 20px; /* Aumentar o padding para destacar a seção */
     text-align: center;
 }
 
@@ -56,12 +65,14 @@ header img {
 }
 
 .produto {
-    width: 250px;
+    width: 100%;
+    max-width: 300px; /* Aumentar o tamanho máximo dos produtos */
     background-color: #1565c0; /* Cor de fundo azul */
     padding: 20px;
-    margin: 10px;
+    margin: 15px; /* Aumentar o margin entre os produtos */
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra para destaque */
 }
 
 .produto img {
@@ -71,18 +82,18 @@ header img {
 }
 
 .produto h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem; /* Aumentar o tamanho da fonte do título do produto */
     margin-bottom: 10px;
 }
 
 .produto p {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Aumentar o tamanho da fonte do parágrafo do produto */
     margin-bottom: 8px;
 }
 
 .produto .preco {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Aumentar o tamanho da fonte do preço */
     margin-bottom: 15px;
 }
 
@@ -91,11 +102,13 @@ header img {
     background-color: #25D366; /* Verde do WhatsApp */
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 20px; /* Aumentar o padding para um botão mais espaçoso */
     border-radius: 5px;
     margin: 10px auto;
     width: 80%;
-    max-width: 200px;
+    max-width: 220px; /* Aumentar a largura máxima do botão */
+    font-size: 1.1rem; /* Aumentar o tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Adicionar transição para o efeito de hover */
 }
 
 .btn-whatsapp:hover {
@@ -103,24 +116,101 @@ header img {
 }
 
 .planos {
-    padding: 50px 0;
+    padding: 60px 20px; /* Aumentar o padding para destacar a seção */
     text-align: center;
 }
 
 .plano {
     background-color: #0d47a1; /* Cor de fundo azul mais escuro para os planos */
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto; /* Alinhar os planos ao centro com margin auto */
     border-radius: 8px;
     text-align: left;
+    max-width: 500px; /* Limitar a largura máxima dos planos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra para destaque */
 }
 
 .plano h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem; /* Aumentar o tamanho da fonte do título do plano */
     margin-bottom: 10px;
 }
 
 .plano p {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Aumentar o tamanho da fonte do parágrafo do plano */
     margin-bottom: 8px;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .produto {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .btn-whatsapp {
+        width: 90%;
+    }
+}
+
+/* Estilos para os produtos */
+.produto {
+    width: 100%;
+    max-width: 300px; /* Aumentar o tamanho máximo dos produtos */
+    background-color: #1565c0; /* Cor de fundo azul */
+    padding: 20px;
+    margin: 15px; /* Aumentar o margin entre os produtos */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra para destaque */
+    transition: transform 0.3s ease; /* Adicionar transição para o efeito de zoom */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Aumentar o tamanho do quadrado do produto em 5% */
+}
+
+/* Outras estilizações */
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1.6rem; /* Aumentar o tamanho da fonte do título do produto */
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 1.2rem; /* Aumentar o tamanho da fonte do parágrafo do produto */
+    margin-bottom: 8px;
+}
+
+.produto .preco {
+    font-weight: bold;
+    font-size: 1.4rem; /* Aumentar o tamanho da fonte do preço */
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    display: block;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px; /* Aumentar o padding para um botão mais espaçoso */
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 220px; /* Aumentar a largura máxima do botão */
+    font-size: 1.1rem; /* Aumentar o tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Adicionar transição para o efeito de hover */
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E; /* Verde escuro do WhatsApp */
+}
+
